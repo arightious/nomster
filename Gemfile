@@ -30,6 +30,12 @@ gem 'jbuilder', '~> 1.2'
 # Bootstrap-SASS gem
 gem 'bootstrap-sass', '~> 3.3.4'
 
+# Gemfile for Rails 3+, Sinatra, or Merb
+gem 'will_paginate', '~> 3.0.5'
+
+# Integrates the Twitter Bootstrap pagination component with will_paginate
+gem 'will_paginate-bootstrap'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
