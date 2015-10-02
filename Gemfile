@@ -36,6 +36,9 @@ gem 'will_paginate', '~> 3.0.5'
 # Integrates the Twitter Bootstrap pagination component with will_paginate
 gem 'will_paginate-bootstrap'
 
+# Simpleform gem
+gem 'simple_form'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

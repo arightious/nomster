@@ -4,4 +4,7 @@
 	<i><%= place.address %></i><br /><br />
 	<p><%= place.description %></p><br />
 </div>
+
 <% end %>
+
+<%= will_paginate @places, renderer: BootstrapPagination::Rails, class: "pagination pagination-centered" %>
