@@ -7,7 +7,7 @@ gem 'rails', '4.0.1'
 gem 'pg'
 
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -28,7 +28,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 # Bootstrap-SASS gem
-gem 'bootstrap-sass', '~> 3.3.4'
+gem 'bootstrap-sass', '3.3.5.1'
 
 # Gemfile for Rails 3+, Sinatra, or Merb
 gem 'will_paginate', '~> 3.0.5'
@@ -38,6 +38,9 @@ gem 'will_paginate-bootstrap'
 
 # Simpleform gem
 gem 'simple_form'
+
+# Sprocket gem
+gem 'sprockets', '2.11.0'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
