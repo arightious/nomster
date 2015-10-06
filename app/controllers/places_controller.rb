@@ -1,5 +1,5 @@
 class PlacesController < ApplicationController
-	before_action :authenticate_user!, :only => [:new, :create]
+	before_action :authenticate_user!, :only => [:new, :create, :edit, :update, :destroy]
 	def index
 		@places = Place.paginate(:page =>params[:page], :per_page => 10)
 	end
@@ -19,6 +19,10 @@ class PlacesController < ApplicationController
 
 	def edit
 		@place = Place.find(params[:id])
+
+		if @place.user != current_user
+			return render :text => 'Nope, not you. Go away!', :status => :forbidden
+		end
 	end
 
 	def update
@@ -29,6 +33,11 @@ class PlacesController < ApplicationController
 
 	def destroy
 		@place = Place.find(params[:id])
+
+		if @place.user != current_user
+			return render :text => 'Nope, not you. Go away!', :status => :forbidden
+		end
+
 		@place.destroy
 		redirect_to root_path
 	end
