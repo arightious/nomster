@@ -75,13 +75,13 @@ blockquote p {
 }
 
 .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    height: 550px;
+    max-height: 550px;
     width: 100%;
 }
 
 .carousel-caption {
   font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 60px;
+  font-size: 4vw;
   font-weight:100;
   text-shadow: rgba(0,0,0,0.95) 2px 2px;
   background-color: rgba(0,0,0,0.5);
