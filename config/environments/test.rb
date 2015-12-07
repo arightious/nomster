@@ -33,4 +33,7 @@ Nomster::Application.configure do
 
   # Print deprecation notices to the stderr.
   config.active_support.deprecation = :stderr
+
+  # not sure what this does
+  config.action_mailer.default_url_options = { :host => 'test.com'}
 end

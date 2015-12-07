@@ -70,3 +70,6 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+
+# Factory Girl gem
+gem "factory_girl_rails", "~> 4.0"
